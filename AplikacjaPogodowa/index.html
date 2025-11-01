@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="theme-color" content="#1e415e">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja pogodowa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ab21f3">
+</head>
+
+<body>
+    <header>
+        <h1>Aplikacja pogodowa</h1>
+        <nav>
+            <button class="tab-button active" data-tab="weather">Pogoda</button>
+            <button class="tab-button" data-tab="validator">Walidator</button>
+            <button class="tab-button" data-tab="pwa-info">PWA Info</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sekcja Pogody -->
+        <section id="weather" class="tab-content active">
+            <div class="search">
+                <input type="text" placeholder="Podaj nazwę miasta">
+                <button>Sprawdź pogodę!</button>
+                <p class="error_message"></p>
+            </div>
+            <div class="weather_top">
+                <h2 class="city_name"></h2>
+                <div>
+                    <img src="" alt="" class="weather_img" style="display: none;">
+                    <p class="temp"></p>
+                </div>
+                <p class="description"></p>
+            </div>
+            <div class="weather_bottom">
+                <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+                <p>Ciśnienie powietrza: <span class="pressure"></span><span class=""></span></p>
+                <p>Wilgotność: <span class="humidity"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+                <p>Zachmurzenie: <span class="clouds"></span></p>
+                <p>Widoczność: <span class="visibility"></span></p>
+            </div>
+            <div>
+                <h3>Zanieczyszczenie powietrza</h3>
+                <div>
+                    <img src="./pm25.png" alt="" class="pollution_img">
+                    <span class="pollution_value"></span>
+                    <span>&micro;g/m<sup>3</sup></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Walidatora -->
+        <section id="validator" class="tab-content">
+            <form id="register-form" class="validator-form">
+                <div class="form-group">
+                    <label for="username">Nazwa użytkownika:</label>
+                    <input type="text" id="username" name="username" required>
+                    <small class="error" id="username-error"></small>
+                    <small class="hint">(min. 5 znaków, max. 20 znaków)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error" id="email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" name="password" required>
+                    <small class="error" id="password-error"></small>
+                    <small class="hint">(min. 8 znaków, 1 duża litera, 1 cyfra, 1 znak specjalny)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Potwierdź hasło:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <small class="error" id="confirm-password-error"></small>
+                </div>
+
+                <button type="submit">Zarejestruj</button>
+            </form>
+
+            <div id="validation-result" class="validation-result"></div>
+        </section>
+
+        <!-- Sekcja PWA -->
+        <section id="pwa-info" class="tab-content">
+            <h2>Informacje o PWA</h2>
+            <div class="pwa-features">
+                <div class="pwa-feature">
+                    <h3>Co to jest PWA?</h3>
+                    <p>Progressive Web App (PWA) to aplikacja internetowa, która wykorzystuje nowoczesne funkcje przeglądarek, aby zapewnić użytkownikom doświadczenie podobne do natywnych aplikacji.</p>
+                </div>
+
+                <div class="pwa-feature">
+                    <h3>Funkcje tej aplikacji PWA:</h3>
+                    <ul>
+                        <li>Możliwość zainstalowania na urządzeniu</li>
+                        <li>Działanie offline (tryb offline)</li>
+                        <li>Responsywny design</li>
+                        <li>Dostęp do API urządzenia</li>
+                        <li>Automatyczne aktualizacje</li>
+                    </ul>
+                </div>
+
+                <div class="pwa-feature">
+                    <h3>Jak zainstalować?</h3>
+                    <p>W zależności od przeglądarki i urządzenia, możesz zobaczyć przycisk "Zainstaluj" w pasku adresu lub w menu przeglądarki.</p>
+                    <button id="install-button" style="display: none;">Zainstaluj aplikację</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projekt WSB Merito Gdańsk 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./sw.js"></script>
+    <script src="./validator.js"></script>
+    <script src="./tabs.js"></script>
+    <script src="./pwa-install.js"></script>
+</body>
+</html>

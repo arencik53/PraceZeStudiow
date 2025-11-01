@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Prawda czy Wyzwanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gra: Prawda czy Wyzwanie</h1>
+    <div id="player-form">
+        <input type="text" id="player-name" placeholder="Imię gracza">
+        <button onclick="dodajGracza()">Dodaj gracza</button>
+        <ul id="players-list"></ul>
+        <button onclick="rozpocznijGre()">Rozpocznij grę</button>
+    </div>
+
+    <div id="game-section" class="ukryte">
+        <h2 id="current-player"></h2>
+        <button onclick="wybierz('prawda')">Prawda</button>
+        <button onclick="wybierz('wyzwanie')">Wyzwanie</button>
+        <button onclick="wlasnaPropozycja()">Niech inni wybiorą</button>
+        <p id="question"></p>
+        <button onclick="wylosujGracza()">Wylosuj gracza</button>
+        <h3>Lista graczy:</h3>
+        <ul id="players-list-copy"></ul>
+    </div>
+
+    <script>
+        const gracze = [];
+
+        const prawdy = [
+            "Jakie jest twoje największe marzenie?",
+            "Czy kiedykolwiek skłamałeś przyjacielowi?",
+            "Kogo lubisz najbardziej w tej grupie?",
+            "Jakie jest twoje najbardziej wstydliwe wspomnienie?",
+            "Czy masz jakąś tajemnicę, której nigdy nikomu nie powiedziałeś?",
+            "Kiedy ostatni raz płakałeś?",
+            "Czy boisz się ciemności?",
+            "Jakie jest twoje największe osiągnięcie?",
+            "Kto był twoją pierwszą miłością?",
+            "Czy potrafisz powiedzieć komuś prawdę prosto w oczy?"
+        ];
+
+        const wyzwania = [
+            "Zatańcz przez 30 sekund bez muzyki.",
+            "Powiedz coś miłego każdemu graczowi.",
+            "Zrób 10 przysiadów.",
+            "Zaśpiewaj piosenkę na głos.",
+            "Mów przez minutę tylko szeptem.",
+            "Zrób zabawną minę przez 20 sekund.",
+            "Udawaj kurczaka przez 30 sekund.",
+            "Powiedz alfabet wspak.",
+            "Zrób 10 pompek.",
+            "Zjedz plasterek cytryny bez żadnej reakcji."
+        ];
+
+        function dodajGracza() {
+            const pole = document.getElementById("player-name");
+            const imie = pole.value.trim();
+            if (imie) {
+                gracze.push(imie);
+                const li = document.createElement("li");
+                li.textContent = imie;
+                document.getElementById("players-list").appendChild(li);
+                pole.value = "";
+            }
+        }
+
+        function rozpocznijGre() {
+            if (gracze.length === 0) return alert("Dodaj przynajmniej jednego gracza.");
+            document.getElementById("player-form").classList.add("ukryte");
+            document.getElementById("game-section").classList.remove("ukryte");
+            aktualizujListeGraczy();
+            wylosujGracza();
+        }
+
+        function aktualizujListeGraczy() {
+            const lista = document.getElementById("players-list-copy");
+            lista.innerHTML = "";
+            gracze.forEach(imie => {
+                const li = document.createElement("li");
+                li.textContent = imie;
+                lista.appendChild(li);
+            });
+        }
+
+        function wylosujGracza() {
+            const losowyIndex = Math.floor(Math.random() * gracze.length);
+            const gracz = gracze[losowyIndex];
+            document.getElementById("current-player").textContent = `Wylosowany gracz: ${gracz}`;
+            document.getElementById("question").textContent = "";
+        }
+
+        function wybierz(typ) {
+            const lista = typ === "prawda" ? prawdy : wyzwania;
+            const tekst = lista[Math.floor(Math.random() * lista.length)];
+            document.getElementById("question").textContent = tekst;
+        }
+
+        function wlasnaPropozycja() {
+            document.getElementById("question").textContent = "Pozostali gracze mogą wymyślić pytanie lub wyzwanie.";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #cce0ff 0%, #99c2ff 100%);
+	padding: 20px;
+	margin: 0;
+}
+
+h1, h2 {
+	text-align: center;
+	color: #002b80;
+}
+
+#player-form, #game-section {
+	background: #f0f8ff;
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+input, button {
+	padding: 10px;
+	margin: 5px 0;
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid #80bfff;
+	font-size: 16px;
+}
+
+button {
+	background-color: #3399ff;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+	button:hover {
+		background-color: #267acc;
+	}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	padding: 5px;
+	background-color: #e6f2ff;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+.ukryte {
+	display: none;
+}
+
+#players-list {
+	max-height: 150px;
+	overflow-y: auto;
+	margin-bottom: 15px;
+}

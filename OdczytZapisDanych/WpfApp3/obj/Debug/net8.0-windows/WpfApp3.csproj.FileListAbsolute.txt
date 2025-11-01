@@ -1,0 +1,38 @@
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.exe
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.deps.json
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.runtimeconfig.json
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.dll
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.pdb
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\MainWindow.baml
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\MainWindow.g.cs
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\App.g.cs
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3_MarkupCompile.cache
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.g.resources
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.GeneratedMSBuildEditorConfig.editorconfig
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.AssemblyInfoInputs.cache
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.AssemblyInfo.cs
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.csproj.CoreCompileInputs.cache
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.dll
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\refint\WpfApp3.dll
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.pdb
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.genruntimeconfig.cache
+F:\Studia\2 rok\Programowanie .NET\Lab3\WpfApp3\WpfApp3\obj\Debug\net8.0-windows\ref\WpfApp3.dll
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.exe
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.deps.json
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.runtimeconfig.json
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.dll
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\bin\Debug\net8.0-windows\WpfApp3.pdb
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3_MarkupCompile.cache
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.g.resources
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.AssemblyInfoInputs.cache
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.AssemblyInfo.cs
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.csproj.CoreCompileInputs.cache
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.dll
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\refint\WpfApp3.dll
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.pdb
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\WpfApp3.genruntimeconfig.cache
+C:\Users\Kamil\Documents\GitHub\PraceZeStudiow\OdczytZapisDanych\WpfApp3\obj\Debug\net8.0-windows\ref\WpfApp3.dll

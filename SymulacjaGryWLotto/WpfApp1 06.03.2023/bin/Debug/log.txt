@@ -1,0 +1,13 @@
+Plik log.txt został utworzony.
+17.04.2025 18:04:34 [WARNING] Podałeś złą wartość! (Podaj wartość od 1 do 6)
+Podana wartość to: 7
+17.04.2025 18:04:41 [WARNING] Podałeś złą wartość w textboxach! Podaj 6 unikalnych liczb z przedziału od 1 do 49!
+17.04.2025 19:23:53 [WARNING] Podałeś złą wartość! (Podaj wartość od 1 do 6)
+Podana wartość to: 7
+17.04.2025 19:24:09 [INFO] Wygrana w lotto: 12 zł (trafiono 2 liczby)
+17.04.2025 19:26:51 [WARNING] Podałeś złą wartość! (Podaj wartość od 1 do 6)
+Podana wartość to: 7
+17.04.2025 19:27:00 [INFO] Wygrana w lotto: 12 zł (trafiono 2 liczby)
+17.04.2025 19:27:52 [WARNING] Podałeś złą wartość! (Podaj wartość od 1 do 6)
+Podana wartość to: 7
+17.04.2025 19:27:55 [INFO] Wygrana w grze w kości! Podano: 3, wylosowano: 3

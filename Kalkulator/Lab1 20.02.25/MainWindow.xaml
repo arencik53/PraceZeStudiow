@@ -1,0 +1,193 @@
+﻿<Window x:Class="Lab1_20._02._25.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Zadania" Height="600" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Zad 1.1-1.6">
+                <ScrollViewer>
+                    <StackPanel Margin="10">
+                        <GroupBox Header="Zadanie 1.1 - Wyświetlanie tekstu" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź pierwszy tekst:"/>
+                                <TextBox x:Name="tbZad11Text1" Margin="0,0,0,5"/>
+                                <Label Content="Wprowadź drugi tekst:"/>
+                                <TextBox x:Name="tbZad11Text2" Margin="0,0,0,5"/>
+                                <Button Content="Wyświetl" Click="BtnZad11_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad11Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 1.2 - Mnożenie liczb" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Liczba 1:"/>
+                                <TextBox x:Name="tbZad12Num1" Margin="0,0,0,5"/>
+                                <Label Content="Liczba 2:"/>
+                                <TextBox x:Name="tbZad12Num2" Margin="0,0,0,5"/>
+                                <Button Content="Pomnóż" Click="BtnZad12_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad12Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 1.3 - Potęgowanie i pierwiastkowanie" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź liczbę:"/>
+                                <TextBox x:Name="tbZad13Num" Margin="0,0,0,5"/>
+                                <Button Content="Oblicz" Click="BtnZad13_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad13Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 1.4 - Konwerter czasu" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wybierz konwersję:"/>
+                                <RadioButton x:Name="rbZad14HoursToMinutes" Content="Godziny na minuty" IsChecked="True" GroupName="Zad14"/>
+                                <RadioButton x:Name="rbZad14MinutesToHours" Content="Minuty na godziny" GroupName="Zad14"/>
+                                <Label Content="Wprowadź wartość:"/>
+                                <TextBox x:Name="tbZad14Value" Margin="0,0,0,5"/>
+                                <Button Content="Przelicz" Click="BtnZad14_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad14Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 1.5 - Kalkulator opłat bankowych" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź saldo konta:"/>
+                                <TextBox x:Name="tbZad15Balance" Margin="0,0,0,5"/>
+                                <Button Content="Oblicz opłatę" Click="BtnZad15_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad15Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Zad 2.1-2.6">
+                <ScrollViewer>
+                    <StackPanel Margin="10">
+                        <GroupBox Header="Zadanie 2.1 - Porównanie z 50" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź liczbę:"/>
+                                <TextBox x:Name="tbZad21Num" Margin="0,0,0,5"/>
+                                <Button Content="Porównaj" Click="BtnZad21_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad21Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.2 - Sprawdzenie parzystości" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź liczbę:"/>
+                                <TextBox x:Name="tbZad22Num" Margin="0,0,0,5"/>
+                                <Button Content="Sprawdź" Click="BtnZad22_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad22Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.3 - Kalkulator BMI" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź wagę (kg):"/>
+                                <TextBox x:Name="tbZad23Weight" Margin="0,0,0,5"/>
+                                <Label Content="Wprowadź wzrost (m):"/>
+                                <TextBox x:Name="tbZad23Height" Margin="0,0,0,5"/>
+                                <Button Content="Oblicz BMI" Click="BtnZad23_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad23Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.4 - Dzień tygodnia" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź numer dnia (1-7):"/>
+                                <TextBox x:Name="tbZad24Day" Margin="0,0,0,5"/>
+                                <Button Content="Pokaż dzień" Click="BtnZad24_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad24Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.5 - Ocena z egzaminu" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź wynik (0-100):"/>
+                                <TextBox x:Name="tbZad25Score" Margin="0,0,0,5"/>
+                                <Button Content="Pokaż ocenę" Click="BtnZad25_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad25Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.6 - Sprawdzenie wieku" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź wiek:"/>
+                                <TextBox x:Name="tbZad26Age" Margin="0,0,0,5"/>
+                                <Button Content="Sprawdź" Click="BtnZad26_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad26Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Zad 2.7-2.13">
+                <ScrollViewer>
+                    <StackPanel Margin="10">
+                        <GroupBox Header="Zadanie 2.7 - Wiek psa" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź wiek psa (lata ludzkie):"/>
+                                <TextBox x:Name="tbZad27DogAge" Margin="0,0,0,5"/>
+                                <Button Content="Przelicz" Click="BtnZad27_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad27Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.8 - Konwersja temperatury" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wybierz konwersję:"/>
+                                <RadioButton x:Name="rbZad28CtoF" Content="Celsius → Fahrenheit" IsChecked="True" GroupName="Zad28"/>
+                                <RadioButton x:Name="rbZad28FtoC" Content="Fahrenheit → Celsius" GroupName="Zad28"/>
+                                <Label Content="Wprowadź temperaturę:"/>
+                                <TextBox x:Name="tbZad28Temp" Margin="0,0,0,5"/>
+                                <Button Content="Przelicz" Click="BtnZad28_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad28Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.9 - Pora roku" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź miesiąc (1-12):"/>
+                                <TextBox x:Name="tbZad29Month" Margin="0,0,0,5"/>
+                                <Button Content="Pokaż porę roku" Click="BtnZad29_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad29Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.10 - Dni w miesiącu" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź miesiąc (1-12):"/>
+                                <TextBox x:Name="tbZad210Month" Margin="0,0,0,5"/>
+                                <Label Content="Wprowadź rok:"/>
+                                <TextBox x:Name="tbZad210Year" Margin="0,0,0,5"/>
+                                <Button Content="Pokaż dni" Click="BtnZad210_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad210Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Zadanie 2.11 - Równanie kwadratowe" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Współczynnik a:"/>
+                                <TextBox x:Name="tbZad211A" Margin="0,0,0,5"/>
+                                <Label Content="Współczynnik b:"/>
+                                <TextBox x:Name="tbZad211B" Margin="0,0,0,5"/>
+                                <Label Content="Współczynnik c:"/>
+                                <TextBox x:Name="tbZad211C" Margin="0,0,0,5"/>
+                                <Button Content="Rozwiąż" Click="BtnZad211_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad211Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+
+                        <GroupBox Header="Zadanie 2.12 - Podatek dochodowy" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź dochód:"/>
+                                <TextBox x:Name="tbZad212Income" Margin="0,0,0,5"/>
+                                <Button Content="Oblicz podatek" Click="BtnZad212_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad212Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+
+                        <GroupBox Header="Zadanie 2.13 - Wypisz liczby" Margin="0,0,0,10">
+                            <StackPanel>
+                                <Label Content="Wprowadź wartość początkową:"/>
+                                <TextBox x:Name="tbZad213Start" Margin="0,0,0,5"/>
+                                <Label Content="Wprowadź wartość końcową:"/>
+                                <TextBox x:Name="tbZad213End" Margin="0,0,0,5"/>
+                                <Button Content="Wypisz liczby" Click="BtnZad213_Click" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="tbZad213Result" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
